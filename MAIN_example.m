@@ -16,8 +16,8 @@ for p = 1:length(patients)
     %return a vecotr idxuse of all the locations where both patidx &
     %taskidx are true; i.e. all the instances where a single patient
     %patients{p} has the tast 'rest'
-    db = datTabAll(idxuse,:);
-    %db.patients{p} = datTabAll(idxuse,:); ?JA would this make a column in
+    %db = datTabAll(idxuse,:);
+    db.patients{p} = datTabAll(idxuse,:);%?JA would this make a column in
     %   db for each patients{p}?
     % 
     %
